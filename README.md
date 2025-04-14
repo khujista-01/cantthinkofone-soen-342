@@ -10,3 +10,6 @@
 
 
 ### Iteration 2 updated and new diagrams can found inside Artifacts, in iteration 2 folder. The POC is updated inside src. ### 
+
+### Video Link
+https://drive.google.com/drive/u/0/folders/19kVFp-o5599q1m-xQ-7KjcaNMt0iwg-t
