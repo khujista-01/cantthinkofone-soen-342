@@ -1,0 +1,88 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36" version="26.1.3">
+  <diagram name="Page-1" id="1u0bXLWwdKbNFYyK-Vdu">
+    <mxGraphModel dx="1496" dy="971" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1400" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="k7ArhHV0Db7-B-JzhvOl-1" value="Objects" style="swimlane;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="60" y="30" width="200" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="k7ArhHV0Db7-B-JzhvOl-14" value="Obid&amp;nbsp; &amp;lt;&amp;lt; pk&amp;gt;&amp;gt;&lt;div&gt;name&lt;/div&gt;&lt;div&gt;description&lt;/div&gt;&lt;div&gt;owned&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="k7ArhHV0Db7-B-JzhvOl-1" vertex="1">
+          <mxGeometry x="40" y="55" width="140" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="k7ArhHV0Db7-B-JzhvOl-2" value="Online" style="swimlane;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="330" y="30" width="210" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="k7ArhHV0Db7-B-JzhvOl-15" value="Oid &amp;lt;&amp;lt; PK&amp;gt;&amp;gt;&lt;div&gt;start_time&lt;/div&gt;&lt;div&gt;end_time&lt;/div&gt;&lt;div&gt;Aid&lt;/div&gt;&lt;div&gt;name&lt;/div&gt;&lt;div&gt;schedule&lt;/div&gt;&lt;div&gt;type&lt;/div&gt;&lt;div&gt;auction_house_id &amp;lt;&amp;lt; FK &amp;gt;&amp;gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="k7ArhHV0Db7-B-JzhvOl-2" vertex="1">
+          <mxGeometry x="15" y="30" width="180" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="k7ArhHV0Db7-B-JzhvOl-3" value="Viewing" style="swimlane;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="630" y="30" width="200" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="k7ArhHV0Db7-B-JzhvOl-16" value="&lt;div&gt;Vid&amp;nbsp; &amp;lt;&amp;lt; PK &amp;gt;&amp;gt;&lt;/div&gt;Obid &amp;lt;&amp;lt; FK &amp;gt;&amp;gt;&lt;div&gt;pid &amp;lt;&amp;lt; FK &amp;gt;&amp;gt;&lt;/div&gt;&lt;div&gt;auction_house_id &amp;lt;&amp;lt; FK &amp;gt;&amp;gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="k7ArhHV0Db7-B-JzhvOl-3" vertex="1">
+          <mxGeometry x="20" y="50" width="170" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="k7ArhHV0Db7-B-JzhvOl-4" value="In-person" style="swimlane;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="60" y="310" width="230" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="k7ArhHV0Db7-B-JzhvOl-17" value="&lt;div&gt;pid &amp;lt;&amp;lt; PK&amp;gt;&amp;gt;&lt;/div&gt;Catalog&lt;div&gt;Aid&lt;div&gt;name&lt;/div&gt;&lt;div&gt;schedule&lt;/div&gt;&lt;div&gt;type&lt;/div&gt;&lt;div&gt;auction_house_id &amp;lt;&amp;lt; FK &amp;gt;&amp;gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;Obid &amp;lt;&amp;lt; FK &amp;gt;&amp;gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="k7ArhHV0Db7-B-JzhvOl-4" vertex="1">
+          <mxGeometry x="15" y="40" width="200" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="k7ArhHV0Db7-B-JzhvOl-5" value="Institution" style="swimlane;whiteSpace=wrap;html=1;startSize=23;" parent="1" vertex="1">
+          <mxGeometry x="330" y="310" width="200" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="k7ArhHV0Db7-B-JzhvOl-18" value="Institute_id &amp;lt;&amp;lt; PK &amp;gt;&amp;gt;&lt;div&gt;name&lt;/div&gt;&lt;div&gt;location&lt;/div&gt;&lt;div&gt;Obid &amp;lt;&amp;lt; FK &amp;gt;&amp;gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="k7ArhHV0Db7-B-JzhvOl-5" vertex="1">
+          <mxGeometry x="30" y="40" width="140" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="k7ArhHV0Db7-B-JzhvOl-6" value="Auction" style="swimlane;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="630" y="310" width="200" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="k7ArhHV0Db7-B-JzhvOl-19" value="Aid&amp;nbsp; &amp;lt;&amp;lt; PK &amp;gt;&amp;gt;&lt;div&gt;name&lt;/div&gt;&lt;div&gt;schedule&lt;/div&gt;&lt;div&gt;type&lt;/div&gt;&lt;div&gt;auction_house_id &amp;lt;&amp;lt; FK &amp;gt;&amp;gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="k7ArhHV0Db7-B-JzhvOl-6" vertex="1">
+          <mxGeometry x="20" y="35" width="150" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="k7ArhHV0Db7-B-JzhvOl-7" value="Auction-House" style="swimlane;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="60" y="590" width="200" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="k7ArhHV0Db7-B-JzhvOl-20" value="&lt;div&gt;Auc_id &amp;lt;&amp;lt; PK&amp;gt;&amp;gt;&lt;/div&gt;name&lt;div&gt;location&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="k7ArhHV0Db7-B-JzhvOl-7" vertex="1">
+          <mxGeometry x="30" y="55" width="140" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="k7ArhHV0Db7-B-JzhvOl-8" value="Schedule" style="swimlane;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="330" y="590" width="210" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="k7ArhHV0Db7-B-JzhvOl-21" value="&lt;div&gt;&lt;br&gt;&lt;/div&gt;Sid &amp;lt;&amp;lt; PK &amp;gt;&amp;gt;&lt;div&gt;time_slots&lt;/div&gt;&lt;div&gt;Admin_id &amp;lt;&amp;lt; FK &amp;gt;&amp;gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: rgba(0, 0, 0, 0); font-family: monospace; font-size: 0px; text-align: start; text-wrap-mode: nowrap;&quot;&gt;%3CmxGraphModel%3E%3Croot%3E%3CmxCell%20id%3D%220%22%2F%3E%3CmxCell%20id%3D%221%22%20parent%3D%220%22%2F%3E%3CmxCell%20id%3D%222%22%20value%3D%22%26lt%3Bdiv%26gt%3Bpid%20%26amp%3Blt%3B%26amp%3Blt%3B%20PK%26amp%3Bgt%3B%26amp%3Bgt%3B%26lt%3B%2Fdiv%26gt%3BCatalog%26lt%3Bdiv%26gt%3BObid%20%26amp%3Blt%3B%26amp%3Blt%3B%20FK%20%26amp%3Bgt%3B%26amp%3Bgt%3B%26lt%3B%2Fdiv%26gt%3B%22%20style%3D%22text%3Bhtml%3D1%3Balign%3Dcenter%3BverticalAlign%3Dmiddle%3BwhiteSpace%3Dwrap%3Brounded%3D0%3B%22%20vertex%3D%221%22%20parent%3D%221%22%3E%3CmxGeometry%20x%3D%2290%22%20y%3D%22610%22%20width%3D%22140%22%20height%3D%2290%22%20as%3D%22geometry%22%2F%3E%3C%2FmxCell%3E%3C%2Froot%3E%3C%2FmxGraphModel%3E&lt;/span&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="k7ArhHV0Db7-B-JzhvOl-8" vertex="1">
+          <mxGeometry x="10" y="40" width="180" height="85" as="geometry" />
+        </mxCell>
+        <mxCell id="k7ArhHV0Db7-B-JzhvOl-9" value="Service-Request" style="swimlane;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="630" y="590" width="200" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="k7ArhHV0Db7-B-JzhvOl-22" value="&lt;div&gt;SRid &amp;lt;&amp;lt; PK&amp;gt;&amp;gt;&lt;/div&gt;type&lt;div&gt;status&lt;br&gt;&lt;div&gt;client_id&amp;nbsp; &amp;lt;&amp;lt; FK &amp;gt;&amp;gt;&lt;/div&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="k7ArhHV0Db7-B-JzhvOl-9" vertex="1">
+          <mxGeometry x="30" y="50" width="140" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="k7ArhHV0Db7-B-JzhvOl-10" value="Client" style="swimlane;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="60" y="870" width="200" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="k7ArhHV0Db7-B-JzhvOl-23" value="Cid &amp;lt;&amp;lt; PK &amp;gt;&amp;gt;&lt;div&gt;name&lt;/div&gt;&lt;div&gt;institution&lt;/div&gt;&lt;div&gt;contact_info&lt;/div&gt;&lt;div&gt;institution_id &amp;lt;&amp;lt; FK &amp;gt;&amp;gt;&lt;/div&gt;&lt;div&gt;Admin_id &amp;lt;&amp;lt; FK &amp;gt;&amp;gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="k7ArhHV0Db7-B-JzhvOl-10" vertex="1">
+          <mxGeometry x="30" y="40" width="140" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="k7ArhHV0Db7-B-JzhvOl-11" value="Administrator" style="swimlane;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="320" y="870" width="200" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="k7ArhHV0Db7-B-JzhvOl-24" value="Admin_id &amp;lt;&amp;lt; PK &amp;gt;&amp;gt;&lt;div&gt;name&lt;/div&gt;&lt;div&gt;expertise&lt;/div&gt;&lt;div&gt;&lt;div&gt;Admin_id &amp;lt;&amp;lt; FK &amp;gt;&amp;gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="k7ArhHV0Db7-B-JzhvOl-11" vertex="1">
+          <mxGeometry x="30" y="50" width="140" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="k7ArhHV0Db7-B-JzhvOl-12" value="Expert" style="swimlane;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="630" y="870" width="200" height="220" as="geometry" />
+        </mxCell>
+        <mxCell id="k7ArhHV0Db7-B-JzhvOl-28" value="Exid &amp;lt;&amp;lt; PK &amp;gt;&amp;gt;&lt;div&gt;name&lt;/div&gt;&lt;div&gt;expertise&lt;/div&gt;&lt;div&gt;expert_id &amp;lt;&amp;lt; FK&amp;gt;&amp;gt;&amp;nbsp;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="k7ArhHV0Db7-B-JzhvOl-12" vertex="1">
+          <mxGeometry x="30" y="50" width="140" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="k7ArhHV0Db7-B-JzhvOl-13" value="Availability" style="swimlane;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="60" y="1150" width="200" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="k7ArhHV0Db7-B-JzhvOl-29" value="&lt;div&gt;Avid &amp;lt;&amp;lt; PK &amp;gt;&amp;gt;&lt;/div&gt;&lt;div&gt;time_slots&lt;/div&gt;&lt;div&gt;schedule_id &amp;lt;&amp;lt; FK &amp;gt;&amp;gt;&lt;/div&gt;expert_id &amp;lt;&amp;lt; FK &amp;gt;&amp;gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="k7ArhHV0Db7-B-JzhvOl-13" vertex="1">
+          <mxGeometry x="30" y="30" width="140" height="130" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
